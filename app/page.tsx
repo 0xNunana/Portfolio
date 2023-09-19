@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Particles from "./components/particles";
+import techLogos from "@/util/techLogos";
 
 const navigation = [
 	{ name: "Projects", href: "/projects" },
@@ -46,6 +47,17 @@ export default function Home() {
 
 				
 				</h2>
+			</div>
+			<div className="text-center animate-fade-in text-white flex flex-wrap items-center justify-center">
+			{techLogos.map((tech) => (
+        <div key={tech.name} className="m-4 ">
+			<div className="flex items-center justify-center">
+			<img src={tech.imageSrc} alt={tech.altText} width={40} height={40} />
+			</div>
+         
+          <p className="text-center text-xs mt-2">{tech.name}</p>
+        </div>
+      ))}
 			</div>
 		</div>
 	);
