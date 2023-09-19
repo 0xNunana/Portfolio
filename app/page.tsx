@@ -34,7 +34,7 @@ export default function Home() {
 
 			<div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
 			<div className="my-16 text-center animate-fade-in">
-				<h2 className="text-md text-zinc-300 ">
+				<h2 className="text-lg text-zinc-300 px-5 ">
 					Hi, my name is Kudaya Paul Yao, A software developer at{" "}
 					<Link
 						target="_blank"
