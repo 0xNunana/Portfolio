@@ -1,17 +1,40 @@
+'use client'
+
 import Link from "next/link";
 import React from "react";
 import Particles from "./components/particles";
+import techLogos from "@/util/techLogos";
+import Image from "next/image";
+
 
 const navigation = [
 	{ name: "Projects", href: "/projects" },
 	{ name: "Contact", href: "/contact" },
 ];
 
+const handleDownloadClick = async () => {
+	try {
+	  const response = await fetch('resume-download'); // Replace with the correct API route URL
+	  const blob = await response.blob();
+	  const url = window.URL.createObjectURL(blob);
+	  const a = document.createElement('a');
+	  a.style.display = 'none';
+	  a.href = url;
+	  a.download = 'KudayaPaulYaoCV.pdf'; // Specify the desired filename
+	  document.body.appendChild(a);
+	  a.click();
+	  window.URL.revokeObjectURL(url);
+	} catch (error) {
+	  console.error('Error downloading file:', error);
+	}
+  };
+  
+
 export default function Home() {
 	return (
 		<div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
 			<nav className="my-16 animate-fade-in">
-				<ul className="flex items-center justify-center gap-4">
+				<ul className="flex items-center justify-center gap-4 space-x-6">
 					{navigation.map((item) => (
 						<Link
 							key={item.href}
@@ -21,6 +44,7 @@ export default function Home() {
 							{item.name}
 						</Link>
 					))}
+				<p className="text-white cursor-pointer" onClick={handleDownloadClick}>Resume</p>
 				</ul>
 			</nav>
 			<div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
@@ -46,6 +70,16 @@ export default function Home() {
 
 				
 				</h2>
+			</div>
+			<div className="text-center animate-fade-in text-white flex flex-wrap items-center justify-center">
+				{techLogos.map((tech)=>(
+					<div key={tech.name} className="m-4">
+						<div className="flex items-center justify-center">
+							<Image src={tech.imageSrc} alt={tech.altText} width={40} height={40}/>
+						</div>
+						<p className="text-center text-xs mt-2">{tech.name}</p>
+					</div>
+				))}
 			</div>
 		</div>
 	);
