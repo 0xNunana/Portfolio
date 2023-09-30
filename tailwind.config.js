@@ -10,6 +10,10 @@ module.exports = {
       backgroundImage: {
 				"gradient-radial":
 					"radial-gradient(50% 50% at 50% 50%, var(--tw-gradient-stops))",
+					'contactbg':"url('/purple.svg')",
+					
+						'projectbg': "url('/dark.jpg')",
+					  
 			},
 			animation: {
 				"fade-in": "fade-in 3s ease-in-out forwards",

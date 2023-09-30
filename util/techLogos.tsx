@@ -19,10 +19,15 @@ const techLogos = [
       imageSrc: "https://vimtor.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F3e4p2gbc%2Fproduction%2F9cdd420e813af517f18c6c9561b65edf4b2a12c7-512x512.png&w=96&q=75",
       altText: "Firebase Logo",
     },
-    {
-        name: "GraphQl",
-        imageSrc: "https://vimtor.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F3e4p2gbc%2Fproduction%2F5400762c06799e027fcc9535e51340383ce8df9b-1024x1024.png&w=96&q=75",
-        altText: "Graph Logo",
+    // {
+    //     name: "GraphQl",
+    //     imageSrc: "https://vimtor.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F3e4p2gbc%2Fproduction%2F5400762c06799e027fcc9535e51340383ce8df9b-1024x1024.png&w=96&q=75",
+    //     altText: "Graph Logo",
+    //   },
+     {
+        name: "NodeJs",
+        imageSrc: "https://icon-library.com/images/nodejs-icon/nodejs-icon-3.jpg",
+        altText: "Node Js",
       },
     {
         name: "Stripe",
