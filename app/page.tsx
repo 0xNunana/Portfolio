@@ -68,7 +68,7 @@ export default function Home() {
 			<div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
 			<div className="my-16 text-center animate-fade-in w-[50%] max-sm:w-full ">
 				<h2 className="text-lg text-zinc-300 px-5 max-sm:text-xs ">
-			Hi, my name is Kudaya Paul Yao, and I'm a software developer at{" "}
+			Hi, my name is Kudaya Paul Yao and I&apos;m a software developer at{" "}
 					<Link
 						target="_blank"
 						href="https://envisiolive.com/"
@@ -76,7 +76,7 @@ export default function Home() {
 					>
 						Envisio Live
 					</Link>
-					. With a strong passion for innovation and a commitment to excellence, I contribute to the success of projects through my expertise in software development."
+					. With a strong passion for innovation and a commitment to excellence, I contribute to the success of projects through my expertise in software development.
 
 				
 				</h2>

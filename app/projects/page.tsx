@@ -8,12 +8,12 @@ const page = () => {
   return (
     <div  className=" h-screen  text-zinc-200 bg-projectbg text-3xl  font-bold   " >
          <div className="container mx-auto p-4 ">
-        <div className='space-x-10 flex items-center mb-7 '>
+        <div className='space-x-10 flex items-center mt-7 mb-10'>
           <Link href='/'>
           <ArrowLeft className="w-10 h-6 hover:-translate-x-2"  />
           </Link>
 
-        <h1 className="text-3xl font-semibold  ">My Projects</h1>
+        <h1 className="text-3xl font-semibold   ">My Projects</h1>
         </div>
 
         <div className=' p-1 my-2'>
@@ -30,7 +30,12 @@ const page = () => {
       {project.category === 'Web' ? (
         <MonitorCheck size={35} className='p-1 bg-black/40' />
       ) : (
-        <Smartphone size={35} className='p-1 bg-black/50 rounded-tl-sm' />
+        <div className='p-1 bg-black/50 rounded-tl-sm flex items-center' >
+           <Smartphone size={35} />
+           <p className='text-sm'>Scan with Expo Go App</p>
+        
+        </div>
+       
       )}
       <h2 className="text-xl font-semibold text-white px-3 absolute bottom-10 bg-zinc-600">{project.title}</h2>
     </div>

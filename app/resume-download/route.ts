@@ -21,7 +21,7 @@ function streamFile(path: string, options?: ReadableOptions): ReadableStream<Uin
 
 export async function GET(request:Request) {
    // return NextResponse.json({message:"try again"})
-   const filePath = path.join(process.cwd(), "public/cv.pdf")
+   const filePath = path.join(process.cwd(), "public/CV.pdf")
    const stat = await fs.statSync(filePath);
    const data: ReadableStream<Uint8Array> = streamFile(filePath);
 

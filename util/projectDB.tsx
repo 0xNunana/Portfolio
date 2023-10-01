@@ -23,7 +23,7 @@ export const projects = [
          preview:'',
          description: 'Fast and Affordable rides',
          githubLink: 'https://github.com/0xNunana/Uber-clone',
-         liveDemoLink: 'https://project1.example.com',
+         liveDemoLink: 'https://qr.expo.dev/eas-update?updateId=3348e070-d989-469a-8202-aaf0b707fa8f&appScheme=exp&host=u.expo.dev',
        },
        {
          category:'Mobile',
@@ -32,7 +32,7 @@ export const projects = [
            preview:'',
            description: 'Your deliverables expert',
            githubLink: 'https://github.com/0xNunana/Xing',
-           liveDemoLink: 'https://project1.example.com',
+           liveDemoLink: 'https://qr.expo.dev/eas-update?updateId=b91688f2-e56e-4af0-b48c-0021e36fbf82&appScheme=exp&host=u.expo.dev',
          },
          {
             category:'Web',
@@ -50,7 +50,7 @@ export const projects = [
               preview:'',
               description: 'Signal Messenger Clone',
               githubLink: 'https://github.com/0xNunana/Signal-clone',
-              liveDemoLink: 'https://project1.example.com',
+              liveDemoLink: 'https://qr.expo.dev/eas-update?updateId=2a09434f-b1e1-4b22-8dee-9e54b47baa2a&appScheme=exp&host=u.expo.dev',
             },
     // Add more projects as needed
   ];
